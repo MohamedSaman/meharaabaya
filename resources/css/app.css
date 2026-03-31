@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --phoenix-primary: #0f766e;
+    --phoenix-primary-dark: #115e59;
+    --phoenix-accent: #f59e0b;
+    --phoenix-bg: #f6fbfa;
+    --phoenix-text: #0f172a;
+    --phoenix-muted: #64748b;
+}
+
+body {
+    background: var(--phoenix-bg);
+    color: var(--phoenix-text);
+}
+
+.phoenix-surface {
+    background: #ffffff;
+    border: 1px solid #dbe7e5;
+    box-shadow: 0 10px 30px rgba(15, 118, 110, 0.08);
+}
+
+.phoenix-gradient {
+    background: linear-gradient(135deg, var(--phoenix-primary), var(--phoenix-primary-dark));
+}
+
+.phoenix-accent {
+    color: var(--phoenix-accent);
+}
+
+[x-cloak] {
+    display: none;
+}
